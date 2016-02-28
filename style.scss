@@ -1,0 +1,88 @@
+// Variables
+//// Colours
+$blue: #59d3ff;
+$green: #0f993d;
+$purple: #772699;
+$red: #bf0020;
+$yellow: #ffbb00;
+$orange: #ff7700;
+$black: #231f20;
+$gray: #44546a;
+
+$color-palette: $blue, $green, $purple, $red, $yellow, $orange, $black, $gray;
+
+//// Sizing
+$xs: 48em;
+$sm: 62em;
+$md: 75em;
+$grid-max: 1440px;
+$font-size-base: 15px;
+
+//// Typography
+$font-family-header: 'Oswald', sans-serif;
+$font-family-body: 'Open Sans', sans-serif;
+
+// Globals
+* {
+  box-sizing: border-box;
+}
+
+//// Typography
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-base;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $font-family-header
+  }
+}
+
+//// Section
+section {
+  max-width: 1200px;
+  padding: 1.5em;
+  margin: 0 auto;
+}
+
+//// Backgrounds
+//// TODO clean this up
+.padded-header {
+  padding: 2em 1.5em;
+}
+.background-blue {
+  background-color: $blue;
+  color: #ffffff;
+}
+.background-green {
+  background-color: $green;
+  color: #ffffff;
+}
+.background-purple {
+  background-color: $purple;
+  color: #ffffff;
+}
+.background-red {
+  background-color: $red;
+  color: #ffffff;
+}
+.background-yellow {
+  background-color: $yellow;
+  color: #ffffff;
+}
+.background-orange {
+  background-color: $orange;
+  color: #ffffff;
+}
+.background-black {
+  background-color: $black;
+  color: #ffffff;
+}
+.background-gray {
+  background-color: $gray;
+  color: #ffffff;
+}
+
+
+////
