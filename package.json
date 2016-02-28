@@ -1,0 +1,19 @@
+{
+  "name": "maf-2016",
+  "version": "1.0.0",
+  "description": "MAF Annual Report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-massey/maf-2016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dan-massey/maf-2016/issues"
+  },
+  "homepage": "https://github.com/dan-massey/maf-2016#readme"
+}
