@@ -3,8 +3,11 @@
 $blue: #59d3ff;
 $green: #0f993d;
 $purple: #772699;
+$purple-transparent: rgba(119, 38, 153, 0.5);
 $red: #bf0020;
+$red-transparent: rgba(191, 0, 32, 0.5);
 $yellow: #ffbb00;
+$yellow-transparent: rgba(255, 187, 0, 0.5);
 $orange: #ff7700;
 $black: #231f20;
 $gray: #44546a;
@@ -115,6 +118,20 @@ section {
   color: #ffffff;
 }
 
+// Transparent Colors
+.background-transparent-purple {
+  background-color: $purple-transparent;
+  color: #ffffff;
+}
+.background-transparent-red {
+  background-color: $red-transparent;
+  color: #ffffff;
+}
+.background-transparent-yellow {
+  background-color: $yellow-transparent;
+  color: #ffffff;
+}
+
 //// Section Headers
 
 .section-header-border {
@@ -153,11 +170,17 @@ section.hero {
 
 section.values {
   .value-photo {
-  height: 150px;
+  height: 180px;
   background-color: $gray;
+  position: relative;
   }
   p {
-    margin: 0 0 1rem;
     padding: 1rem;
+  }
+  .value-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
