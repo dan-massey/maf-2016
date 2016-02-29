@@ -114,12 +114,21 @@ section {
   background-color: $gray;
   color: #ffffff;
 }
-.border-blue {
-  border-top: 7px solid $blue;
-  color: $blue;
+
+//// Section Headers
+
+.section-header-border {
+  border-top: 7px solid;
   padding: 0.25em 0;
 }
-
+.section-header-blue {
+  border-color: $blue;
+  color: $blue;
+}
+.section-header-green {
+  border-color: $green;
+  color: $green;
+}
 
 // Sections
 header .colored-banner {
@@ -134,5 +143,16 @@ section.hero {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $gray;
+  }
+}
+
+section.values {
+  .value-photo {
+  height: 150px;
+  background-color: $gray;
+  }
+  p {
+    margin: 0 0 1rem;
+    padding: 1rem;
   }
 }
