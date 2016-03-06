@@ -168,6 +168,34 @@ section.hero {
   }
 }
 
+section.ceo-letter {
+  .photo {
+    height: 500px;
+    background: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $gray;  
+  }
+}
+
+.ceo-letter-quote:before {
+  quotes: "“" "”" "‘" "’";
+  content: open-quote;
+  font-size: 4em;
+  float: left;
+  line-height: 1em;
+  margin-right: .1em;
+}
+
+.ceo-letter-quote-end:after {
+  quotes: "“" "”" "‘" "’";
+  content: close-quote;
+  font-size: 4em;
+  line-height: 1em;
+  float: right;
+}
+
+
 section.values {
   .value-photo {
   height: 180px;
