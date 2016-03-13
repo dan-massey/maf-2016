@@ -203,13 +203,15 @@ section.hero {
   }
 }
 
-section.ceo-letter {
+section.ceo-letter,
+section.mafistas {
   .photo {
     height: 500px;
     background: url('images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $gray;
+    margin-bottom: 1rem;
   }
 }
 
