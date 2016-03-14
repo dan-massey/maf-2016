@@ -203,13 +203,14 @@ h5.section-header-border {
   color: $gray;
 }
 
-<<<<<<< HEAD
+
 // Tabs
 a.mobile-tab-label {
   border-width: 0 0 1 0;
   font-family: $font-family-header;
   text-transform: uppercase;
-=======
+}
+
 .photo {
   background-color: $gray;
   &.placeholder-lg {
@@ -226,7 +227,6 @@ a.mobile-tab-label {
     height: 20em;
     margin-bottom: 1em;
   }
->>>>>>> origin/master
 }
 
 // Sections
