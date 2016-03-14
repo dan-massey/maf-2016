@@ -3,12 +3,6 @@
 @import 'stylesheets/grid';
 @import 'stylesheets/background';
 
-section {
-  max-width: 1200px;
-  padding: 1.5rem;
-  margin: 0 auto;
-}
-
 // Tabs
 a.mobile-tab-label {
   border-width: 0 0 1 0;
@@ -19,8 +13,9 @@ a.mobile-tab-label {
 // Photo placeholders
 .photo {
   background-color: $gray;
-  background-size: cover;
-  background-repeat: no-repeat;
+  img {
+    width: 100%;
+  }
 
   &.placeholder-lg {
     height: 40em;
@@ -38,13 +33,23 @@ a.mobile-tab-label {
   }
 }
 
+section {
+  max-width: 1200px;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
 // Sections
 header .colored-banner {
   .color-block {
     height: 3px;
   }
 }
+
 section.hero {
+  .hero-content {
+    margin: 2em 0 3em;
+  }
   .photo {
     background-image: url('images/hero.jpg');
   }
