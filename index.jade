@@ -77,17 +77,17 @@ body
       div(data-role="tabs").col-xs-12
         div(data-role="navbar")
           ul
-            li 
-              a(href="#one") 8 New MAFistas
-            li 
-              a(href="#two") 750 hours of training
-            li
-              a(href="#three") 32,319,504 steps
-        div(id="one")
+            li.mobile-tab
+              a(href="#mafistas-one").mobile-tab-label 8 New MAFistas
+            li.mobile-tab
+              a(href="#mafistas-two").mobile-tab-label 750 hours
+            li.mobile-tab
+              a(href="#mafistas-three").mobile-tab-label 32,319,504 steps
+        div(id="mafistas-one")
           +new-mafistas
-        div(id="two")
+        div(id="mafistas-two")
           +hours-of-training
-        div(id="three")
+        div(id="mafistas-three")
           +steps
   section
     h2 Our Clients
