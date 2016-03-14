@@ -1,0 +1,31 @@
+// Variables
+//// Colours
+$blue: #59d3ff;
+$green: #0f993d;
+$purple: #772699;
+$purple-transparent: rgba(119, 38, 153, 0.5);
+$red: #bf0020;
+$red-transparent: rgba(191, 0, 32, 0.5);
+$yellow: #ffbb00;
+$yellow-transparent: rgba(255, 187, 0, 0.5);
+$orange: #ff7700;
+$black: #231f20;
+$gray: #44546a;
+
+$dark-text: hsla(345, 6%, 13%, 1);
+$medium-text: hsla(345, 1%, 40%, 1);
+$light-text: hsla(345, 1%, 75%, 1);
+
+$color-palette: $blue, $green, $purple, $red, $yellow, $orange, $black, $gray;
+
+//// Sizing
+$xs: 48em;
+$sm: 62em;
+$md: 75em;
+$grid-max: 1440px;
+$font-size-base: 15px;
+
+//// Typography
+$font-family-header: 'Oswald', sans-serif;
+$font-family-header: 'Roboto Condensed', sans-serif;
+$font-family-body: 'Roboto', sans-serif;
