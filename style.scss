@@ -95,3 +95,25 @@ section.clients {
     margin-bottom: 2em;
   }
 }
+
+.state-loans {
+  padding: 1rem;
+}
+
+.state-loans.total {
+  background-color: $gray;
+  color: white;
+}
+
+.state,
+.amount {
+  text-align: center;
+}
+
+.state {
+  font-weight: lighter;
+}
+
+.amount {
+  font-weight: bolder;
+}
