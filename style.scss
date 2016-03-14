@@ -205,12 +205,17 @@ h5.section-header-border {
 
 .photo {
   background-color: $gray;
-  &.placeholder-large {
+  &.placeholder-lg {
     height: 40em;
     margin-bottom: 2em;
   }
 
-  &.placeholder-small {
+  &.placeholder-md {
+    height: 30em;
+    margin-bottom: 2em;
+  }
+
+  &.placeholder-sm {
     height: 20em;
     margin-bottom: 1em;
   }
@@ -282,10 +287,5 @@ section.values {
 section.clients {
   .client {
     margin-bottom: 2em;
-    @media only screen and (min-width: $sm) {
-      p {
-        column-count: 2;
-      }
-    }
   }
 }
