@@ -33,6 +33,8 @@ $font-family-body: 'Roboto', sans-serif;
 // Globals
 * {
   box-sizing: border-box;
+  text-shadow: none;
+  font-family: $font-family-body;
 }
 
 // For screens less than xs
@@ -72,7 +74,7 @@ h3 { font-size: 2.5rem; }
 h4 { font-size: 1.5rem; }
 h5 { font-size: 1rem; }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   text-transform: uppercase;
 }
 
@@ -201,11 +203,30 @@ h5.section-header-border {
   color: $gray;
 }
 
+<<<<<<< HEAD
 // Tabs
 a.mobile-tab-label {
   border-width: 0 0 1 0;
   font-family: $font-family-header;
   text-transform: uppercase;
+=======
+.photo {
+  background-color: $gray;
+  &.placeholder-lg {
+    height: 40em;
+    margin-bottom: 2em;
+  }
+
+  &.placeholder-md {
+    height: 30em;
+    margin-bottom: 2em;
+  }
+
+  &.placeholder-sm {
+    height: 20em;
+    margin-bottom: 1em;
+  }
+>>>>>>> origin/master
 }
 
 // Sections
@@ -268,5 +289,11 @@ section.values {
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+}
+
+section.clients {
+  .client {
+    margin-bottom: 2em;
   }
 }
