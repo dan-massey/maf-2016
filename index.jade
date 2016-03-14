@@ -54,20 +54,42 @@ body
   section.mafistas
     h2.section-header-border.section-header-gray The MAFistas
     .photo
-    .row
-      .col-xs-12.col-sm-4.col-md-4
+    .row.hide-xs
+      .col-sm-4
         h4.section-header-border.section-header-gray.no-margin 8
         h5.no-margin.section-header-gray New MAFistas
-        p It's been quite a year at MAF. In 2015, we welcomed 8 new MAFistas — and 1 beautiful baby girl — to the family.
-      .col-xs-12.col-sm-4.col-md-4
+        mixin new-mafistas
+          p It's been quite a year at MAF. In 2015, we welcomed 8 new MAFistas — and 1 beautiful baby girl — to the family.
+        +new-mafistas
+      .col-sm-4
         h4.section-header-border.section-header-yellow.no-margin 750
-        h5.no-margin.section-header-yellow Hours of training    
-        p Together, we completed over 750 hours of training courses and professional development.
-      .col-xs-12.col-sm-4.col-md-4
+        h5.no-margin.section-header-yellow Hours of training 
+        mixin hours-of-training   
+          p Together, we completed over 750 hours of training courses and professional development.
+        +hours-of-training
+      .col-sm-4
         h4.section-header-border.section-header-green.no-margin 32,319,504
         h5.no-margin.section-header-green Steps
-        p Our staff walked, ran, and skipped a total of 32,319,504 steps in MAF’s fitness challenge 
-  section.clients
+        mixin steps
+          p Our staff walked, ran, and skipped a total of 32,319,504 steps in MAF’s fitness challenge
+        +steps
+    .row.show-xs
+      div(data-role="tabs").col-xs-12
+        div(data-role="navbar")
+          ul
+            li 
+              a(href="#one") 8 New MAFistas
+            li 
+              a(href="#two") 750 hours of training
+            li
+              a(href="#three") 32,319,504 steps
+        div(id="one")
+          +new-mafistas
+        div(id="two")
+          +hours-of-training
+        div(id="three")
+          +steps
+  section
     h2 Our Clients
     .row
       .col-xs-12.photo

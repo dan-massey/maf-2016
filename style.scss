@@ -37,6 +37,20 @@ $font-family-body: 'Roboto', sans-serif;
   font-family: $font-family-body;
 }
 
+// For screens less than xs
+.show-xs {
+  display: none;
+}
+
+@media only screen and (max-width : $xs) {
+  .hide-xs {
+    display: none;
+  }
+  .show-xs {
+    display: inherit;
+  }
+}
+
 //// Typography
 body {
   font-family: $font-family-body;
