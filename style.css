@@ -105,6 +105,13 @@ h5.section-header-border {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem; }
 
+.state-icon-small {
+  font-family: 'StateFaceRegular';
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0.5rem; }
+
 .show-xs {
   display: none; }
 
