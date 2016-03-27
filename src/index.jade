@@ -56,24 +56,24 @@ body
     h2.section-header-border.section-header-gray The MAFistas
     .row.hide-xs
       .col-sm-4
-        div.column-photo.new-mafistas
-        h4.section-header-border.section-header-gray.no-margin 8
-        h5.no-margin.section-header-gray New MAFistas
         mixin new-mafistas
+          div.column-photo.new-mafistas
+          h4.section-header-border.section-header-gray.no-margin 8
+          h5.no-margin.section-header-gray New MAFistas
           p It's been quite a year at MAF. In 2015, we welcomed 8 new MAFistas — and 1 beautiful baby girl — to the family.
         +new-mafistas
       .col-sm-4
-        div.column-photo.training
-        h4.section-header-border.section-header-yellow.no-margin 750
-        h5.no-margin.section-header-yellow Hours of training 
         mixin hours-of-training   
+          div.column-photo.training
+          h4.section-header-border.section-header-yellow.no-margin 750
+          h5.no-margin.section-header-yellow Hours of training 
           p Together, we completed over 750 hours of training courses and professional development.
         +hours-of-training
       .col-sm-4
-        div.column-photo.walking
-        h4.section-header-border.section-header-green.no-margin 32,319,504
-        h5.no-margin.section-header-green Steps
         mixin steps
+          div.column-photo.walking
+          h4.section-header-border.section-header-green.no-margin 32,319,504
+          h5.no-margin.section-header-green Steps
           p Our staff walked, ran, and skipped a total of 32,319,504 steps in MAF’s fitness challenge
         +steps
     .row.show-xs
@@ -81,11 +81,11 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#mafistas-one").mobile-tab-label 8 New MAFistas
+              a(href="#mafistas-one").mobile-tab-label New Staff
             li.mobile-tab
-              a(href="#mafistas-two").mobile-tab-label 750 hours
+              a(href="#mafistas-two").mobile-tab-label Training
             li.mobile-tab
-              a(href="#mafistas-three").mobile-tab-label 32,319,504 steps
+              a(href="#mafistas-three").mobile-tab-label Fitness
         div(id="mafistas-one")
           +new-mafistas
         div(id="mafistas-two")
