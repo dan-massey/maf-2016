@@ -224,10 +224,19 @@ section.hero .photo {
   line-height: 1em;
   float: right; }
 
-section.values .value-photo {
-  height: 180px;
+.column-photo {
+  height: 200px;
   background-color: #44546a;
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-position: center; }
+
+section.values .value-meet {
+  background-image: url("images/values-meet.jpg"); }
+section.values .value-respect {
+  background-image: url("images/values-respect.jpg"); }
+section.values .value-build {
+  background-image: url("images/values-build.jpg"); }
 section.values p {
   padding: 1rem; }
 section.values .value-caption {
@@ -235,6 +244,12 @@ section.values .value-caption {
   bottom: 0;
   left: 0;
   width: 100%; }
+
+section.mafistas .new-mafistas {
+  background-image: url("images/cleo.jpg");
+  background-position: top; }
+section.mafistas .training {
+  background-image: url("images/training.jpg"); }
 
 section.clients .client {
   margin-bottom: 2em; }

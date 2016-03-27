@@ -72,13 +72,28 @@ section.hero {
   float: right;
 }
 
-
-section.values {
-  .value-photo {
-  height: 180px;
+.column-photo {
+  height: 200px;
   background-color: $gray;
   position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+section.values {
+
+  .value-meet {
+    background-image: url('images/values-meet.jpg');
   }
+
+  .value-respect {
+    background-image: url('images/values-respect.jpg');
+  }
+
+  .value-build {
+    background-image: url('images/values-build.jpg');
+  }
+
   p {
     padding: 1rem;
   }
@@ -87,6 +102,16 @@ section.values {
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+}
+
+section.mafistas {
+  .new-mafistas {
+    background-image: url('images/cleo.jpg');
+    background-position: top;
+  }
+  .training {
+    background-image: url('images/training.jpg');
   }
 }
 
