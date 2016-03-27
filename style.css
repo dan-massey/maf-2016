@@ -253,8 +253,10 @@ section.mafistas .training {
 section.mafistas .walking {
   background-image: url("images/walking.jpg"); }
 
-section.clients .client {
+section.our-clients .client {
   margin-bottom: 2em; }
+section.our-clients .sandra {
+  background-image: url("images/sandra.jpg"); }
 
 .state-loans {
   padding: 1rem; }
