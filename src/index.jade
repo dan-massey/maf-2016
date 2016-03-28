@@ -12,6 +12,8 @@ head
   link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css")
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
   script(src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js")
+
 body
   header
     .colored-banner.row
@@ -94,24 +96,78 @@ body
         div(id="mafistas-three")
           +steps
   section.our-impact
-    h2.section-header-border.section-header-gray Our Impact
+    h2.section-header-border.section-header-green Our Impact
+    .row
+      .col-xs-12
+        h3 Milestones
     .row
       .col-xs-12.col-md-4
-        h4.section-header-border.section-header-gray.no-margin 5,380
-        h5.no-margin.section-header-gray Social Loans
+        include ../images/lending.svg
+        h4.section-header-orange.no-margin $5.04M in loan volume 
+        p.no-margin Through 5,380 social loans.
       .col-xs-12.col-md-4
-        h4.section-header-border.section-header-gray.no-margin $5.04 million
-        h5.no-margin.section-header-gray In Loans
+        include ../images/savings.svg
+        h4.section-header-purple.no-margin $1.02M saved in interest & fees
+        p.no-margin That’s 20 cents saved on every dollar loaned.
       .col-xs-12.col-md-4
-        h4.section-header-border.section-header-gray.no-margin $1.02 million
-        h5.no-margin.section-header-gray Saved in Interest & Fees
+        include ../images/handshake.svg
+        h4.section-header-yellow.no-margin 99.3% repayment rate
+        p.no-margin With a total of 599,606 credit points added.
+    .row
+      .col-xs-12.col-md-6
+        h3.no-margin 2015 Impact
+        p Each year, we’re building better resources & stronger communities. Here's what we accomplished in 2015:
     .row
       .col-xs-12.col-md-4
-        h4.section-header-border.section-header-gray.no-margin 99.3%
-        h5.no-margin.section-header-gray Repayment Rate
+        h4.no-margin 2,367 social loans
+        p.no-margin
+          span.section-header-green ▴ 
+          | 37% compared to 2014
       .col-xs-12.col-md-4
-        h4.section-header-border.section-header-gray.no-margin 599,606
-        h5.no-margin.section-header-gray Credit Points Added
+        h4.no-margin $2.07M in loans
+        p.no-margin
+          span.section-header-green ▴ 
+          | 33% compared to 2014
+      .col-xs-12.col-md-4
+        h4.no-margin 21 new partnerships
+        p.no-margin
+          span.section-header-green ▴ 
+          | 66% compared to 2014
+    .row.middle-xs
+      .col-xs-12.col-sm-4
+        h4.no-margin Total Number of Partners to Date
+        span.big-figure#partners-count-figure
+        p.no-margin
+          span.section-header-green ▴ 
+          span#partners-count-detail
+      .col-xs-12.col-sm-8#partners-count-chart
+      .col-xs-12.col-sm-4
+        h4.no-margin Total Number of Loans to Date
+        span.big-figure#loans-count-figure
+        p.no-margin
+          span.section-header-green ▴ 
+          span#loans-count-detail
+      .col-xs-12.col-sm-8#loans-count-chart
+      .col-xs-12.col-sm-4
+        h4.no-margin Total Amount of Loans to Date
+        span.big-figure#loans-sum-figure
+        p.no-margin
+          span.section-header-green ▴ 
+          span#loans-sum-detail
+      .col-xs-12.col-sm-8#loans-sum-chart
+    .row
+      .col-xs-12
+        h3 Client Outcomes
+      .col-xs.col-md-6
+        p Without a good credit score, everything is more expensive. If your score is under 650, you can expect to pay 2-5x more in interest. That means a used car worth $5,000 would cost you $6,800.  You would end up paying 36% — or $1800 — just in interest.
+      .col-xs-12.col-md-6
+        p The majority of our clients join with low or no credit scores:
+        ul
+          li  60% have subprime credit or no credit at the start
+          li 9 out of 10 without a score quickly build one (jumping from 0 to 650 points)
+          li 7 out of 10 with subprime credit significantly improve their scores.
+          li Overall, we’ve added 1000+ prime borrowers to the marketplace
+      
   section.our-clients
     h2.section-header-border.section-header-black Our Clients
     .row.hide-xs
@@ -658,3 +714,4 @@ body
           li Billy Roh
           li Sudarshan Upadhya
           li Kathryn Weinmann
+  script(src="chart.js")

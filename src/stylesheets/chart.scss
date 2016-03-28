@@ -1,0 +1,18 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: $gray;
+}
+
+.axis text {
+  fill: $gray;
+}
+
+svg rect {
+  width: 30px;
+}
+
+span.big-figure {
+  font-size: 4rem;
+  font-family: $font-family-header;
+}

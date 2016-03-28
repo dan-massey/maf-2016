@@ -6,8 +6,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #231f20; }
+  @media (max-width: 75em) {
+    body {
+      font-size: 15px; } }
 
 p, q, blockquote, li {
   color: #676565; }
@@ -91,6 +94,15 @@ h5.section-header-border {
 .section-header-gray {
   border-color: #44546a;
   color: #44546a; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
 
 @font-face {
   font-family: 'StateFaceRegular';
@@ -176,6 +188,21 @@ h5.section-header-border {
 .background-transparent-yellow {
   background-color: rgba(255, 187, 0, 0.5);
   color: #ffffff; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #44546a; }
+
+.axis text {
+  fill: #44546a; }
+
+svg rect {
+  width: 30px; }
+
+span.big-figure {
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif; }
 
 a.mobile-tab-label {
   border-width: 0 0 1 0;
