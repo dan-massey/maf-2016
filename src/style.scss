@@ -159,6 +159,21 @@ section.highlights {
   }
 }
 
+section.looking-ahead {
+  .mobile {
+    background-image: url('images/mobile.jpg');
+  }
+
+  .summit {
+    background-image: url('images/summit.jpg');
+  }
+
+  .research-photo {
+    background-image: url('images/forward-research.jpg')
+  }
+
+}
+
 .state-loans {
   padding: 1rem;
 }
