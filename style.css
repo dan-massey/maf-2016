@@ -268,6 +268,13 @@ section.partners .partners-map {
   background-repeat: no-repeat;
   background-color: white; }
 
+section.highlights .technology {
+  background-image: url("images/technology.jpg"); }
+section.highlights .research {
+  background-image: url("images/research.jpg"); }
+section.highlights .leadership {
+  background-image: url("images/leadership.jpg"); }
+
 .state-loans {
   padding: 1rem; }
 

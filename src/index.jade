@@ -422,30 +422,50 @@ body
         .amount $2,069,064.60
   section.highlights
     h2.section-header-border.no-margin 2015 Highlights
-    .row
+    .row.hide-xs
       .col-xs-12.col-md-4
-        .photo.placeholder-sm
         mixin lending-circle-highlight
+          .column-photo.technology
+          h4 Technology
           p 2015 marked the roll-out of our new online social loan platform, cutting our client application time in half and connecting our partners with on-demand troubleshooting and support.
           p Next, we launched Virtual Lending Circles Formations in California, allowing residents to join our credit-building community from anywhere across the state.
         +lending-circle-highlight
       .col-xs-12.col-md-4
-        .photo.placeholder-sm
         mixin hierarchy-of-needs
+          .column-photo.research
+          h4 Research
           p In December we unveiled the “Hierarchy of Financial Needs,”  a new framework for understanding economic well-being — inspired by Abraham Maslow’s hierarchy of physical, social, and psychological needs.
         +hierarchy-of-needs
       .col-xs-12.col-md-4
-        .photo.placeholder-sm
         mixin what-its-worth
+          .column-photo.leadership
+          h4 Leadership
           p CEO Jose Quinonez was invited to contribute a chapter to <cite>What It’s Worth: Strengthening the Financial Future of Families, Communities and the Nation</cite>, a new book published by CFED and the Federal Reserve Bank of San Francisco.
           p Jose’s chapter “Latinos in the Financial Shadows” highlights the hidden strengths of immigrant communities and MAF’s work to bring informal practices into the mainstream.
         +what-its-worth
+    .row.show-xs
+      div(data-role="tabs").col-xs-12
+        div(data-role="navbar")
+          ul
+            li.mobile-tab
+              a(href="#technology").mobile-tab-label Technology
+            li.mobile-tab
+              a(href="#research").mobile-tab-label Research
+            li.mobile-tab
+              a(href="#leadership").mobile-tab-label Leadership
+        div(id="technology")
+          +lending-circle-highlight
+        div(id="research")
+          +hierarchy-of-needs
+        div(id="leadership")
+          +what-its-worth
   section.our-financials
     h2.section-header-border.no-margin Our Financials
     h4 Every Dollar Opens Doors
     .row
       .col-xs-12
-        .photo.placeholder-lg
+        .photo
+          img(src='images/financials.jpg')
     .row
       .col-sm-4
         h4 Social Lending
