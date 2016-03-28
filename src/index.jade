@@ -154,131 +154,185 @@ body
           +kimberly
         div(id="client-sandra")
           +sandra
-  section.our-partners
-    h2.section-header-border.section-header-gray Our Partners
-    .row
-      .col-xs-12
-        p In 2015, our national network of Lending Circles providers grew from 31 to 53 nonprofit partners — ranging from LGBTQ organizations to business accelerators — across 17 states and Washington, DC.
-    .row
-      .col-xs-12.col-md-6
-        p MAF’s Partner Success Managers support our nonprofit partners with everything from forming their first Lending Circle to sharing their client successes. This year we provided over 1000 hours of training and technical assistance to help our partners set up and sustain Lending Circles.
-      .col-xs-12.col-md-6
-        .photo.placeholder-md
-    .row
+  section.partners
+    h2.section-header-border.section-header-gray.no-margin Our Partners
+    .row.hide-xs
+      .col-sm-6
+        mixin national-network
+          h3 National Network
+          h4.section-header-border.section-header-green.no-margin 18
+          h5.no-margin.section-header-green States + Washington DC
+          .column-photo.partners-map
+          p In 2015, our national network of Lending Circles providers grew from 31 to 53 nonprofit partners — ranging from LGBTQ organizations to business accelerators — across 17 states and Washington, DC.
+        +national-network
+      .col-sm-6
+        mixin support
+          h3 Support
+          h4.section-header-border.section-header-purple.no-margin 4000
+          h5.no-margin.section-header-purple Hours of training
+          .column-photo.partners-support
+          p MAF’s Partner Success Managers support our nonprofit partners with everything from forming their first Lending Circle to sharing their client successes. This year we provided over 4000 hours of training and technical assistance to help our partners set up and sustain Lending Circles.
+        +support
+    .row.hide-xs
+      mixin national-partners-list-title
+        h3 Our Community
+        .col-xs-12
+          h4.section-header-border.section-header-orange.no-margin 53
+          h5.no-margin.section-header-orange National partners
+      +national-partners-list-title
+    .row.hide-xs
       .col-xs-12.col-sm-6
-        h4.no-margin
-          span CA
-          span.state-icon-small E
-        ul
-          li AnewAmerica
-          li Asian Resources
-          li BrownBoiProject
-          li Building Skills Partnership
-          li Central City Neighborhood Partners
-          li Family Independence Initiative
-          li Fremont Family Resource Center
-          li Game Theory Academy
-          li Korean Resource Center
-          li Mexican American Opportunity Foundation (MAOF)
-          li Mission Asset Fund
-          li OBDC Small Business Finance
-          li Peninsula Family Service
-          li Pilipino Workers Center of Southern California
-          li Renaissance Entrepreneurship Center
-          li Rubicon Programs
-          li San Francisco LGBT Community Center
-          li The Unity Council
-          li Veterans Equity Center
-        h4.no-margin
-          span CO
-          span.state-icon-small F
-        ul
-          li NEWSED Community Development Corporation
-        h4.no-margin
-          span DC
-          span.state-icon-small y
-        ul
-          li Latino Economic Development Center (LEDC Metro/DC)
-          li National Coalition for Asian Pacific American Community Development (CAPACD)
-        h4.no-margin
-          span FL
-          span.state-icon-small l
-        ul
-          li Catalyst Miami
-        h4.no-margin
-          span GA
-          span.state-icon-small J
-        ul
-          li Center for Pan Asian Community Services
-        h4.no-margin
-          span HI
-          span.state-icon-small K
-        ul
-          li Hawaiian Community Assets, Inc.
-        h4.no-margin
-          span IL
-          span.state-icon-small N
-        ul
-          li Center for Changing Lives
-          li Chinese American Service League
-          li The Resurrection Project
+        mixin national-partners-list-1
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span CA
+              span.state-icon-small E
+            ul
+              li AnewAmerica
+              li Asian Resources
+              li BrownBoiProject
+              li Building Skills Partnership
+              li Central City Neighborhood Partners
+              li Family Independence Initiative
+              li Fremont Family Resource Center
+              li Game Theory Academy
+              li Korean Resource Center
+              li Mexican American Opportunity Foundation (MAOF)
+              li Mission Asset Fund
+              li OBDC Small Business Finance
+              li Peninsula Family Service
+              li Pilipino Workers Center of Southern California
+              li Renaissance Entrepreneurship Center
+              li Rubicon Programs
+              li San Francisco LGBT Community Center
+              li The Unity Council
+              li Veterans Equity Center
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span CO
+              span.state-icon-small F
+            ul
+              li NEWSED Community Development Corporation
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span DC
+              span.state-icon-small y
+            ul
+              li Latino Economic Development Center (LEDC Metro/DC)
+              li National Coalition for Asian Pacific American Community Development (CAPACD)
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span FL
+              span.state-icon-small l
+            ul
+              li Catalyst Miami
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span GA
+              span.state-icon-small J
+            ul
+              li Center for Pan Asian Community Services
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span HI
+              span.state-icon-small K
+            ul
+              li Hawaiian Community Assets, Inc.
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span IL
+              span.state-icon-small N
+            ul
+              li Center for Changing Lives
+              li Chinese American Service League
+              li The Resurrection Project
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span MI
+              span.state-icon-small V
+            ul
+              li Southwest Solutions
+        +national-partners-list-1
       .col-xs-12.col-sm-6
-        h4.no-margin
-          span MI
-          span.state-icon-small V
-        ul
-          li Southwest Solutions
-        h4.no-margin
-          span MN
-          span.state-icon-small W
-        ul
-          li Asian Economic Development Association
-          li ComunidadesLatinasUnidasenServicio
-          li Project for Pride in Living
-          li Southwest Minnesota Housing Partnership
-        h4.no-margin
-          span NY
-          span.state-icon-small h
-        ul
-          li ChhayaCommunity Development Corporation
-          li Harlem Congregations for Community Improvement, Inc.
-        h4.no-margin
-          span OH
-          span.state-icon-small i
-        ul
-          li Asian Services in Action 
-        h4.no-margin
-          span OR
-          span.state-icon-small k
-        ul
-          li CAPACES Leadership Institute
-          li La Hacienda
-          li The Next Door, Inc.
-        h4.no-margin
-          span TN
-          span.state-icon-small p
-        ul
-          li ConexionAmericas
-        h4.no-margin
-          span TX
-          span.state-icon-small q
-        ul
-          li Catholic Charities of Fort Worth
-          li Chinese Community Center
-          li El Paso Collaborative for Community and Economic Development
-          li Family Pathfinders
-          li YWCA of Fort Worth and Tarrant County
-        h4.no-margin
-          span VA
-          span.state-icon-small s
-        ul
-          li Northern Virginia Family Service
-        h4.no-margin
-          span WA
-          span.state-icon-small u
-        ul
-          li 21 Progress
-          li El Centro de la Raza
+        mixin national-partners-list-2
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span MN
+              span.state-icon-small W
+            ul
+              li Asian Economic Development Association
+              li ComunidadesLatinasUnidasenServicio
+              li Project for Pride in Living
+              li Southwest Minnesota Housing Partnership
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span NY
+              span.state-icon-small h
+            ul
+              li ChhayaCommunity Development Corporation
+              li Harlem Congregations for Community Improvement, Inc.
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span OH
+              span.state-icon-small i
+            ul
+              li Asian Services in Action
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span OR
+              span.state-icon-small k
+            ul
+              li CAPACES Leadership Institute
+              li La Hacienda
+              li The Next Door, Inc.
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span TN
+              span.state-icon-small p
+            ul
+              li ConexionAmericas
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span TX
+              span.state-icon-small q
+            ul
+              li Catholic Charities of Fort Worth
+              li Chinese Community Center
+              li El Paso Collaborative for Community and Economic Development
+              li Family Pathfinders
+              li YWCA of Fort Worth and Tarrant County
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span VA
+              span.state-icon-small s
+            ul
+              li Northern Virginia Family Service
+          div(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              span WA
+              span.state-icon-small u
+            ul
+              li 21 Progress
+              li El Centro de la Raza
+        +national-partners-list-2
+    .row.show-xs
+      div(data-role="tabs").col-xs-12
+        div(data-role="navbar")
+          ul
+            li.mobile-tab
+              a(href="#partners-network").mobile-tab-label National Network
+            li.mobile-tab
+              a(href="#partners-support").mobile-tab-label Supporting Partners
+            li.mobile-tab
+              a(href="#our-community").mobile-tab-label Our Community
+        div(id="partners-network")
+          +national-network
+        div(id="partners-support")
+          +support
+        div(id="our-community")
+          +national-partners-list-title
+          +national-partners-list-1
+          +national-partners-list-2
   section.loans-across-the-country
     h2.section-header-border.no-margin Loans Across the Country
     .row
