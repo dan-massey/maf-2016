@@ -128,6 +128,23 @@ section.our-clients {
   }
 }
 
+section.partners {
+  .column-photo {
+    height: 350px;
+  }
+
+  .partners-support {
+    background-image: url('images/partners-support.jpg');
+  }
+
+  .partners-map {
+    background-image: url('images/maf-map.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+}
+
 .state-loans {
   padding: 1rem;
 }
