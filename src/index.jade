@@ -506,27 +506,43 @@ body
           +building-better
   section.looking-ahead
     h2.section-header-border Looking ahead
-    .row
+    .row.hide-xs
       .col-xs-12.col-sm-4
-        h4 Lending Circles Summit
-        .photo.placeholder-sm
         mixin lending-circles-summit
+          .column-photo.summit
+          h4 Lending Circles Summit
           p Coming in October 2016, the Lending Circles Summit will convene the nonprofit and for-profit innovators bringing the power of social lending to communities across the country.
           p We’ll hear insights from industry leaders who are shaping the future of financial health about how we can equitably serve consumers of all backgrounds and income levels.
         +lending-circles-summit
-      .col-xs-12.col-sm-4
-        h4 Mobile App
-        .photo.placeholder-sm
+      .col-xs-12.col-sm-4        
         mixin mobile-app
+          .column-photo.mobile
+          h4 Mobile App
           p Over the next year, we will make our programs completely mobile-accessible.
           p The Lending Circles App will enable participants to monitor financial progress and make it easier for our nonprofit partners to provide social loans to communities across the nation. 
         +mobile-app
       .col-xs-12.col-sm-4
-        h4 Research
-        .photo.placeholder-sm
-        mixin research
+        mixin forward-research
+          .column-photo.research-photo
+          h4 Research
           p We learn so we can do better. This year, we’ll finish up a long-term research project with Yale University studying the impact of programs like Lending Circles on participants’ financial lives, as well as the role of friends and family in people’s financial health.
-        +research
+        +forward-research
+    .row.show-xs
+      div(data-role="tabs").col-xs-12
+        div(data-role="navbar")
+          ul
+            li.mobile-tab
+              a(href="#lending-circles-summit").mobile-tab-label Lending Circles Summit
+            li.mobile-tab
+              a(href="#mobile-app").mobile-tab-label Mobile App
+            li.mobile-tab
+              a(href="#forward-research").mobile-tab-label Research
+        div(id="lending-circles-summit")
+          +lending-circles-summit
+        div(id="mobile-app")
+          +mobile-app
+        div(id="forward-research")
+          +forward-research
   section.our-supporters
     h2.section-header-border Thanks to Our Supporters
     .row

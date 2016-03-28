@@ -275,6 +275,13 @@ section.highlights .research {
 section.highlights .leadership {
   background-image: url("images/leadership.jpg"); }
 
+section.looking-ahead .mobile {
+  background-image: url("images/mobile.jpg"); }
+section.looking-ahead .summit {
+  background-image: url("images/summit.jpg"); }
+section.looking-ahead .research-photo {
+  background-image: url("images/forward-research.jpg"); }
+
 .state-loans {
   padding: 1rem; }
 
