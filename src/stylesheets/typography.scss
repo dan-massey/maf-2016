@@ -9,6 +9,9 @@ body {
   font-family: $font-family-body;
   font-size: $font-size-base;
   color: $dark-text;
+  @media (max-width: $md) {
+    font-size: $font-size-base-tablet;
+  }
 }
 
 p, q, blockquote, li {
@@ -84,6 +87,19 @@ h5.section-header-border {
 .section-header-gray {
   border-color: $gray;
   color: $gray;
+}
+
+// Alignment
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 // State Icons

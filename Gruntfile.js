@@ -36,7 +36,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: 'src/*',
+        files: ['src/*', 'chart.js'],
         tasks: ['updateDom']
       },
       options: {

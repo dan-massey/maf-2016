@@ -2,8 +2,9 @@
 @import 'stylesheets/typography';
 @import 'stylesheets/grid';
 @import 'stylesheets/background';
+@import 'stylesheets/chart';
 
-// Tabs
+// Tabs 
 a.mobile-tab-label {
   border-width: 0 0 1 0;
   font-family: $font-family-header;
