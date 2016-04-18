@@ -349,6 +349,22 @@ section.looking-ahead .summit {
 section.looking-ahead .research-photo {
   background-image: url("images/forward-research.jpg"); }
 
+.mobile-tab {
+  margin-bottom: 2rem !important; }
+
+.ui-navbar li .ui-btn {
+  background-color: transparent !important;
+  color: #44546a !important;
+  border: transparent !important;
+  box-shadow: none !important; }
+
+.ui-page-theme-a .ui-btn.ui-btn-active {
+  background-color: transparent !important;
+  color: #0f993d !important;
+  border-bottom: 3px solid #0f993d !important;
+  text-shadow: none !important;
+  box-shadow: none !important; }
+
 .state-loans {
   padding: 1rem; }
 
