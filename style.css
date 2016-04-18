@@ -51,49 +51,81 @@ h5 {
 h1, h2 {
   text-transform: uppercase; }
 
-h1.section-header-border,
-h2.section-header-border,
-h3.section-header-border {
+h1.header-border,
+h2.header-border,
+h3.header-border {
   border-top: 7px solid; }
 
-h4.section-header-border,
-h5.section-header-border {
+h4.header-border,
+h5.header-border {
   border-top: 3px solid; }
 
-.section-header-border {
+.header-border {
   padding: 0.25em 0; }
 
-.section-header-blue {
-  border-color: #59d3ff;
-  color: #59d3ff; }
+.blue {
+  color: #59d3ff;
+  border-color: #59d3ff; }
 
-.section-header-green {
-  border-color: #0f993d;
-  color: #0f993d; }
+.green {
+  color: #0f993d;
+  border-color: #0f993d; }
 
-.section-header-yellow {
-  border-color: #ffbb00;
-  color: #ffbb00; }
+.yellow {
+  color: #ffbb00;
+  border-color: #ffbb00; }
 
-.section-header-red {
-  border-color: #bf0020;
-  color: #bf0020; }
+.red {
+  color: #bf0020;
+  border-color: #bf0020; }
 
-.section-header-purple {
-  border-color: #772699;
-  color: #772699; }
+.purple {
+  color: #772699;
+  border-color: #772699; }
 
-.section-header-orange {
-  border-color: #ff7700;
-  color: #ff7700; }
+.orange {
+  color: #ff7700;
+  border-color: #ff7700; }
 
-.section-header-black {
-  border-color: #231f20;
-  color: #231f20; }
+.black {
+  color: #231f20;
+  border-color: #231f20; }
 
-.section-header-gray {
-  border-color: #44546a;
-  color: #44546a; }
+.gray {
+  color: #44546a;
+  border-color: #44546a; }
+
+.header {
+  color: #fff;
+  padding: 0.75em;
+  margin: 3rem -1.5rem; }
+  @media (min-width: 75em) {
+    .header {
+      margin: 3rem 0; } }
+
+.header-blue {
+  background-color: #59d3ff; }
+
+.header-green {
+  background-color: #0f993d; }
+
+.header-yellow {
+  background-color: #ffbb00; }
+
+.header-red {
+  background-color: #bf0020; }
+
+.header-purple {
+  background-color: #772699; }
+
+.header-orange {
+  background-color: #ff7700; }
+
+.header-black {
+  background-color: #231f20; }
+
+.header-gray {
+  background-color: #44546a; }
 
 .text-left {
   text-align: left; }
@@ -234,7 +266,11 @@ header .colored-banner .color-block {
 section.hero .hero-content {
   margin: 2em 0 3em; }
 section.hero .photo {
-  background-image: url("images/hero.jpg"); }
+  background-image: url("images/hero.jpg");
+  margin: 0 -1.5rem; }
+  @media (min-width: 75em) {
+    section.hero .photo {
+      margin: 0; } }
 
 .ceo-letter-quote:before {
   quotes: "“" "”" "‘" "’";

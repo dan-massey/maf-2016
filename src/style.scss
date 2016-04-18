@@ -4,7 +4,7 @@
 @import 'stylesheets/background';
 @import 'stylesheets/chart';
 
-// Tabs 
+// Tabs
 a.mobile-tab-label {
   border-width: 0 0 1 0;
   font-family: $font-family-header;
@@ -53,6 +53,10 @@ section.hero {
   }
   .photo {
     background-image: url('images/hero.jpg');
+    margin: 0 -1.5rem;
+    @media (min-width: $md) {
+      margin: 0;
+    }
   }
 }
 
