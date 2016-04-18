@@ -121,15 +121,20 @@ section.mafistas {
   .walking {
     background-image: url('images/walking.jpg');
   }
+  .column-photo {
+    margin-bottom: 2rem;
+  }
 }
 
 section.our-clients {
   .client {
     margin-bottom: 2em;
   }
-
   .sandra {
     background-image: url('images/sandra.jpg');
+  }
+  .column-photo {
+    margin-bottom: 2rem;
   }
 }
 
