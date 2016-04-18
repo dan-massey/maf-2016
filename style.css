@@ -315,11 +315,15 @@ section.mafistas .training {
   background-image: url("images/training.jpg"); }
 section.mafistas .walking {
   background-image: url("images/walking.jpg"); }
+section.mafistas .column-photo {
+  margin-bottom: 2rem; }
 
 section.our-clients .client {
   margin-bottom: 2em; }
 section.our-clients .sandra {
   background-image: url("images/sandra.jpg"); }
+section.our-clients .column-photo {
+  margin-bottom: 2rem; }
 
 section.partners .column-photo {
   height: 350px; }
