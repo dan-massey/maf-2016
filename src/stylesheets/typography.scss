@@ -36,57 +36,99 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-h1.section-header-border,
-h2.section-header-border,
-h3.section-header-border {
+h1.header-border,
+h2.header-border,
+h3.header-border {
   border-top: 7px solid;
 }
 
-h4.section-header-border,
-h5.section-header-border {
+h4.header-border,
+h5.header-border {
   border-top: 3px solid;
 }
-.section-header-border {
+.header-border {
   padding: 0.25em 0;
 }
 
-.section-header-blue {
-  border-color: $blue;
+.blue {
   color: $blue;
+  border-color: $blue;
 }
-.section-header-green {
-  border-color: $green;
+
+.green {
   color: $green;
+  border-color: $green;
 }
 
-.section-header-yellow {
-  border-color: $yellow;
+.yellow {
   color: $yellow;
+  border-color: $yellow;
 }
 
-.section-header-red {
-  border-color: $red;
+.red {
   color: $red;
+  border-color: $red;
 }
 
-.section-header-purple {
-  border-color: $purple;
+.purple {
   color: $purple;
+  border-color: $purple;
 }
 
-.section-header-orange {
-  border-color: $orange;
+.orange {
   color: $orange;
+  border-color: $orange;
 }
 
-.section-header-black {
-  border-color: $black;
+.black {
   color: $black;
+  border-color: $black;
 }
 
-.section-header-gray {
-  border-color: $gray;
+.gray {
   color: $gray;
+  border-color: $gray;
+}
+
+.header {
+  color: #fff;
+  padding: 0.75em;
+  margin: 3rem -1.5rem;
+  @media (min-width: $md) {
+    margin: 3rem 0;
+  }
+}
+
+.header-blue {
+  background-color: $blue;
+}
+
+.header-green {
+  background-color: $green;
+}
+
+.header-yellow {
+  background-color: $yellow;
+}
+
+.header-red {
+  background-color: $red;
+}
+
+.header-purple {
+  background-color: $purple;
+}
+
+.header-orange {
+  background-color: $orange;
+}
+
+.header-black {
+  background-color: $black;
+}
+
+.header-gray {
+  background-color: $gray;
 }
 
 // Alignment
