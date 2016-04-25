@@ -221,6 +221,10 @@ h5.header-border {
   background-color: rgba(255, 187, 0, 0.5);
   color: #ffffff; }
 
+.background-transparent-green {
+  background-color: rgba(15, 153, 61, 0.5);
+  color: #fff; }
+
 .axis path,
 .axis line {
   fill: none;
