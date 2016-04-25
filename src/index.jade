@@ -137,7 +137,7 @@ body
     .row.hide-xs
       .col-sm-4
         mixin henry
-          .column-photo.henry
+          .column-photo.placeholder-sm
           h4.header-border.green.no-margin 100%
           h5.no-margin.green Of Clients Complete Financial Education
           h4 Henry
@@ -145,7 +145,7 @@ body
         +henry
       .col-sm-4
         mixin kimberly
-          .column-photo.kimberly
+          .column-photo.placeholder-sm
           h4.header-border.purple.no-margin 582
           h5.no-margin.purple New Citizens & DACA Recipients
           h4 Kimberly
@@ -193,6 +193,9 @@ body
     .row.hide-xs
       mixin national-partners-list-title
         h3 Our Community
+        .col-xs-12
+          h4.header-border.orange.no-margin 53
+          h5.no-margin.orange National partners
       +national-partners-list-title
     .row.hide-xs
       .col-xs-12.col-sm-6
@@ -349,6 +352,16 @@ body
           +national-partners-list-2
   section.loans-across-the-country
     h2.header.header-purple Loans Across the Country
+    include states.jade
+    .row
+      each state in states
+        .col-xs-6.col-sm-3.state-loans(data-role="collapsible" data-inset="false")
+          h4.no-margin
+            span= state['state']
+            span.state-icon= state['state-icon']
+          ul
+            each partner in state['partners']
+              li= partner
     .row
       .col-xs-6.col-sm-3.state-loans
         .state NV
@@ -448,8 +461,7 @@ body
         mixin hierarchy-of-needs
           .column-photo.research
           h4 Research
-          p In December we unveiled the “Hierarchy of Financial Needs” (HFN), a new framework for understanding economic well-being.
-          p The HFN takes its inspiration from psychologist Abraham Maslow’s hierarchy of physical, social, and psychological needs.	
+          p In December we unveiled the “Hierarchy of Financial Needs,”  a new framework for understanding economic well-being — inspired by Abraham Maslow’s hierarchy of physical, social, and psychological needs.
         +hierarchy-of-needs
       .col-xs-12.col-md-4
         mixin what-its-worth
@@ -486,21 +498,21 @@ body
         h4 Social Lending
         mixin social-lending
           h4.header-border.green.no-margin $2m
-          h5.no-margin.green In Social Loans
+          h5.no-margin.green in social loans
           p In 2015, we provided over $2 million in loans to help thousands of hardworking people save for college, grow businesses, and become citizens — all while building better credit.
         +social-lending
       .col-sm-4
         h4 Fundraising
         mixin fundraising
-          h4.header-border.purple.no-margin $3.27m
-          h5.no-margin.purple Raised
+          h4.header-border.purple.no-margin $3.7m
+          h5.no-margin.purple raised
           p We raised $3.27 million from foundations, corporations, individuals, and partnership fees.  JPMorgan Chase & Co. awarded MAF a landmark grant of $1.5 million to expand Lending Circles even further across the country.
         +fundraising
       .col-sm-4
         h4 Building Better
         mixin building-better
           h4.header-border.orange.no-margin $2m
-          h5.no-margin.orange Invested
+          h5.no-margin.orange invested
           p This year we invested $2 million in new partnerships and upgraded technologies. Two major campaigns — Build a Better Bay Area and Build a Better Northwest — added 9 new local partners and 3 in the Pacific Northwest, while Virtual Formations expanded Lending Circles across California.
         +building-better
     .row.show-xs
@@ -563,7 +575,7 @@ body
     h2.header.header-green Thanks to Our Supporters
     .row
       .col-xs-12
-        p With the support of our funders, donors, and board members, we’re helping thousands of hardworking families build more secure financial futures. We couldn’t do it without you.
+        p Thanks to the support of our funders, donors, and board members, we’re helping thousands of families create more secure financial futures.
     .row
       .col-xs-12
         h3 Funders
@@ -669,8 +681,6 @@ body
           li Bjorn Commers
           li Nikhil Goel
           li Dan Massey
-          li Debevoise & Plimpton LLP
           li Billy Roh
           li Sudarshan Upadhya
           li Kathryn Weinmann
-          
