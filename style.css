@@ -361,6 +361,9 @@ section.looking-ahead .research-photo {
   text-shadow: none !important;
   box-shadow: none !important; }
 
+.ui-collapsible-content, .ui-body-inherit {
+  background: none !important; }
+
 .state-loans {
   padding: 1rem; }
 
@@ -368,12 +371,19 @@ section.looking-ahead .research-photo {
   background-color: #44546a;
   color: white; }
 
+.state {
+  text-transform: capitalize; }
+
 .state,
 .amount {
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 .state {
   font-weight: lighter; }
+
+.state-icon {
+  display: block; }
 
 .amount {
   font-weight: bolder; }
