@@ -190,148 +190,6 @@ body
           h4 Partner Support
           p MAF’s Partner Success Managers support our nonprofit partners with everything from forming their first Lending Circle to sharing their client successes. This year we provided over 4000 hours of training and technical assistance to help our partners set up and sustain Lending Circles.
         +support
-    .row.hide-xs
-      mixin national-partners-list-title
-        h3 Our Community
-        .col-xs-12
-          h4.header-border.orange.no-margin 53
-          h5.no-margin.orange National partners
-      +national-partners-list-title
-    .row.hide-xs
-      .col-xs-12.col-sm-6
-        mixin national-partners-list-1
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span CA
-              span.state-icon-small E
-            ul
-              li AnewAmerica
-              li Asian Resources
-              li BrownBoiProject
-              li Building Skills Partnership
-              li Central City Neighborhood Partners
-              li Family Independence Initiative
-              li Fremont Family Resource Center
-              li Game Theory Academy
-              li Korean Resource Center
-              li Mexican American Opportunity Foundation (MAOF)
-              li Mission Asset Fund
-              li OBDC Small Business Finance
-              li Peninsula Family Service
-              li Pilipino Workers Center of Southern California
-              li Renaissance Entrepreneurship Center
-              li Rubicon Programs
-              li San Francisco LGBT Community Center
-              li The Unity Council
-              li Veterans Equity Center
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span CO
-              span.state-icon-small F
-            ul
-              li NEWSED Community Development Corporation
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span DC
-              span.state-icon-small y
-            ul
-              li Latino Economic Development Center (LEDC Metro/DC)
-              li National Coalition for Asian Pacific American Community Development (CAPACD)
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span FL
-              span.state-icon-small l
-            ul
-              li Catalyst Miami
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span GA
-              span.state-icon-small J
-            ul
-              li Center for Pan Asian Community Services
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span HI
-              span.state-icon-small K
-            ul
-              li Hawaiian Community Assets, Inc.
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span IL
-              span.state-icon-small N
-            ul
-              li Center for Changing Lives
-              li Chinese American Service League
-              li The Resurrection Project
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span MI
-              span.state-icon-small V
-            ul
-              li Southwest Solutions
-        +national-partners-list-1
-      .col-xs-12.col-sm-6
-        mixin national-partners-list-2
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span MN
-              span.state-icon-small W
-            ul
-              li Asian Economic Development Association
-              li ComunidadesLatinasUnidasenServicio
-              li Project for Pride in Living
-              li Southwest Minnesota Housing Partnership
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span NY
-              span.state-icon-small h
-            ul
-              li ChhayaCommunity Development Corporation
-              li Harlem Congregations for Community Improvement, Inc.
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span OH
-              span.state-icon-small i
-            ul
-              li Asian Services in Action
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span OR
-              span.state-icon-small k
-            ul
-              li CAPACES Leadership Institute
-              li La Hacienda
-              li The Next Door, Inc.
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span TN
-              span.state-icon-small p
-            ul
-              li ConexionAmericas
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span TX
-              span.state-icon-small q
-            ul
-              li Catholic Charities of Fort Worth
-              li Chinese Community Center
-              li El Paso Collaborative for Community and Economic Development
-              li Family Pathfinders
-              li YWCA of Fort Worth and Tarrant County
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span VA
-              span.state-icon-small s
-            ul
-              li Northern Virginia Family Service
-          div(data-role="collapsible" data-inset="false")
-            h4.no-margin
-              span WA
-              span.state-icon-small u
-            ul
-              li 21 Progress
-              li El Centro de la Raza
-        +national-partners-list-2
     .row.show-xs
       div(data-role="tabs").col-xs-12
         div(data-role="navbar")
@@ -340,16 +198,10 @@ body
               a(href="#partners-network").mobile-tab-label.ui-btn-active National Network
             li.mobile-tab
               a(href="#partners-support").mobile-tab-label Partner Support
-            li.mobile-tab
-              a(href="#our-community").mobile-tab-label Our Community
         div(id="partners-network")
           +national-network
         div(id="partners-support")
           +support
-        div(id="our-community")
-          +national-partners-list-title
-          +national-partners-list-1
-          +national-partners-list-2
   section.loans-across-the-country
     h2.header.header-purple Loans Across the Country
     include states.jade
@@ -357,96 +209,13 @@ body
       each state in states
         .col-xs-6.col-sm-3.state-loans(data-role="collapsible" data-inset="false")
           h4.no-margin
-            span= state['state']
+            p.state= state['name']
             span.state-icon= state['state-icon']
+            span.amount= state['amount']
           ul
-            each partner in state['partners']
-              li= partner
-    .row
-      .col-xs-6.col-sm-3.state-loans
-        .state NV
-        .state-icon g
-        .amount $81,000.00
-      .col-xs-6.col-sm-3.state-loans
-        .state CA
-        .state-icon E
-        .amount $1,296,954.50
-      .col-xs-6.col-sm-3.state-loans
-        .state OR
-        .state-icon k
-        .amount $26,400.00
-      .col-xs-6.col-sm-3.state-loans
-        .state WA
-        .state-icon u
-        .amount $92,540.00
-    .row
-      .col-xs-6.col-sm-3.state-loans
-        .state MN
-        .state-icon W
-        .amount $127,100.00
-      .col-xs-6.col-sm-3.state-loans
-        .state MA
-        .state-icon S
-        .amount $151,515.10
-      .col-xs-6.col-sm-3.state-loans
-        .state FL
-        .state-icon I
-        .amount $41,680.00
-      .col-xs-6.col-sm-3.state-loans
-        .state CO
-        .state-icon F
-        .amount $12,650.00
-    .row
-      .col-xs-6.col-sm-3.state-loans
-        .state GA
-        .state-icon J
-        .amount $21,500.00
-      .col-xs-6.col-sm-3.state-loans
-        .state TX
-        .state-icon q
-        .amount $33,000.00
-      .col-xs-6.col-sm-3.state-loans
-        .state HI
-        .state-icon K
-        .amount $9,800.00
-      .col-xs-6.col-sm-3.state-loans
-        .state IL
-        .state-icon N
-        .amount $65,900.00
-    .row
-      .col-xs-6.col-sm-3.state-loans
-        .state VA
-        .state-icon s
-        .amount $12,925.00
-      .col-xs-6.col-sm-3.state-loans
-        .state NY
-        .state-icon h
-        .amount $22,450.00
-      .col-xs-6.col-sm-3.state-loans
-        .state DC
-        .state-icon y
-        .amount $27,250.00
-      .col-xs-6.col-sm-3.state-loans
-        .state OH
-        .state-icon i
-        .amount $14,400.00
-    .row
-      .col-xs-6.col-sm-3.state-loans
-        .state MD
-        .state-icon T
-        .amount $125,150.00
-      .col-xs-6.col-sm-3.state-loans
-        .state MI
-        .state-icon V
-        .amount $6,500.00
-      .col-xs-6.col-sm-3.state-loans
-        .state PA
-        .state-icon l
-        .amount $350.00
-      .col-xs-6.col-sm-3.state-loans.total
-        .state.total Total
-        .state-icon z
-        .amount $2,069,064.60
+            if state['partners']
+              each partner in state['partners']
+                li= partner
   section.highlights
     h2.header.header-orange 2015 Highlights
     .row.hide-xs
