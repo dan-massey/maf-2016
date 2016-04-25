@@ -192,6 +192,12 @@ section.looking-ahead {
 
 }
 
+// Background override
+
+.ui-page-theme-a, .ui-overlay-a {
+  background-color: #fff !important;
+}
+
 // Tab overrides
 
 .mobile-tab {
@@ -229,19 +235,42 @@ section.looking-ahead {
   padding-left: 1em !important;
 }
 
-// End overrides
-
 .ui-collapsible-content, .ui-body-inherit {
   background: none !important;
 }
+
+.ui-page-theme-a, .ui-btn {
+  background: none !important;
+  text-shadow: none !important;
+  border: none !important;
+}
+
+.ui-collapsible {
+  margin: 0 !important;
+}
+
+.ui-page-theme-a, .ui-body-inherit {
+  border: none !important;
+}
+
+.ui-btn:hover {
+  background-color: rgb(245, 245, 245) !important;
+}
+
+.ui-page-theme-a .ui-btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+// End overrides
+
 
 .state-loans {
   padding: 1rem;
 }
 
-.state-loans.total {
-  background-color: $gray;
-  color: white;
+.state-loans.total a {
+  background-color: rgb(245, 245, 245) !important;
 }
 
 .state {
