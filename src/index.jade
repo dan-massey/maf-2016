@@ -213,18 +213,18 @@ body
               p.state= state['name']
               span.state-icon= state['state-icon']
               span.amount= state['amount']
-            ul
-              if state['partners']
-                each partner in state['partners']
-                  li= partner
+            if state['partners']
+              ul
+              each partner in state['partners']
+                li= partner
         else
           .col-xs-6.col-sm-3.state-loans(data-role="collapsible" data-inset="false")
             h4.no-margin
               p.state= state['name']
               span.state-icon= state['state-icon']
               span.amount= state['amount']
-            ul
-              if state['partners']
+            if state['partners']
+              ul
                 each partner in state['partners']
                   li= partner
   section.highlights
