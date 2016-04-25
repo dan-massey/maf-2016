@@ -402,7 +402,8 @@ section.looking-ahead .research-photo {
   padding: 1rem; }
 
 .state-loans.total a {
-  background-color: whitesmoke !important; }
+  background-color: whitesmoke !important;
+  padding-bottom: 2.5em; }
 
 .state {
   text-transform: capitalize; }
