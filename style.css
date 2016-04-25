@@ -284,11 +284,14 @@ section.hero .photo {
   background-position: center; }
 
 section.values .value-meet {
-  background-image: url("images/values-meet.jpg"); }
+  background-image: url("images/values-meet.jpg");
+  margin-bottom: 1rem; }
 section.values .value-respect {
-  background-image: url("images/values-respect.jpg"); }
+  background-image: url("images/values-respect.jpg");
+  margin-bottom: 1rem; }
 section.values .value-build {
-  background-image: url("images/values-build.jpg"); }
+  background-image: url("images/values-build.jpg");
+  margin-bottom: 1rem; }
 section.values p {
   padding: 1rem; }
 section.values .value-caption {
