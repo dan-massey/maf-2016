@@ -79,12 +79,12 @@ body
           h5.no-margin.green Steps
           p Our staff walked, ran, and skipped a total of 32,319,504 steps in MAF’s fitness challenge
         +steps
-.row.show-xs:     .row.show-xs
+    .row.show-xs
       div(data-role="tabs").col-xs-12
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#mafistas-one").mobile-tab-label New Staff
+              a(href="#mafistas-one").mobile-tab-label.ui-btn-active New Staff
             li.mobile-tab
               a(href="#mafistas-two").mobile-tab-label Training
             li.mobile-tab
@@ -97,33 +97,34 @@ body
           +steps
   section.our-impact
     h2.header.header-yellow Our Impact
-    .row
+    .row.hide-xs
       .col-xs-12
         h3 Milestones
         mixin milestones
           .column-photo.placeholder-sm
         +milestones
-    .row
+    .row.hide-xs
       .col-xs-12
         h3 Growth
         mixin growth
           .column-photo.placeholder-sm
         +growth
-    .row
+    .row.hide-xs
       .col-xs-12
         h3 Client Outcomes
         mixin outcomes
           .column-photo.placeholder-sm
         +outcomes
-    .row.show-xs: div(data-role="tabs").col-xs-12
-      div(data-role="navbar")
-        ul
-          li.mobile-tab
-            a(href="#impact-one").mobile-tab-label Milestones
-          li.mobile-tab
-            a(href="#impact-two").mobile-tab-label Growth
-          li.mobile-tab
-            a(href="#impact-three").mobile-tab-label Outcomes
+    .row.show-xs
+      div(data-role="tabs").col-xs-12
+        div(data-role="navbar")
+          ul
+            li.mobile-tab
+              a(href="#impact-one").mobile-tab-label.ui-btn-active Milestones
+            li.mobile-tab
+              a(href="#impact-two").mobile-tab-label Growth
+            li.mobile-tab
+              a(href="#impact-three").mobile-tab-label Outcomes
       div(id="impact-one")
         +milestones
       div(id="impact-two")
@@ -163,7 +164,7 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#client-henry").mobile-tab-label Henry
+              a(href="#client-henry").mobile-tab-label.ui-btn-active Henry
             li.mobile-tab
               a(href="#client-kimberly").mobile-tab-label Kimberly
             li.mobile-tab
@@ -333,7 +334,7 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#partners-network").mobile-tab-label National Network
+              a(href="#partners-network").mobile-tab-label.ui-btn-active National Network
             li.mobile-tab
               a(href="#partners-support").mobile-tab-label Partner Support
             li.mobile-tab
@@ -462,7 +463,7 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#technology").mobile-tab-label Technology
+              a(href="#technology").mobile-tab-label.ui-btn-active Technology
             li.mobile-tab
               a(href="#research").mobile-tab-label Research
             li.mobile-tab
@@ -507,7 +508,7 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#social-lending").mobile-tab-label Social Lending
+              a(href="#social-lending").mobile-tab-label.ui-btn-active Social Lending
             li.mobile-tab
               a(href="#fundraising").mobile-tab-label Fundraising
             li.mobile-tab
@@ -547,7 +548,7 @@ body
         div(data-role="navbar")
           ul
             li.mobile-tab
-              a(href="#lending-circles-summit").mobile-tab-label LC Summit
+              a(href="#lending-circles-summit").mobile-tab-label.ui-btn-active LC Summit
             li.mobile-tab
               a(href="#mobile-app").mobile-tab-label Mobile App
             li.mobile-tab
