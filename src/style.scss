@@ -42,13 +42,17 @@ section {
 // Sections
 header .colored-banner {
   .color-block {
-    height: 3px;
+    height: 5px;
   }
 }
 
 section.hero {
+  h1 {
+    line-height: 1;
+  }
   .hero-content {
-    margin: 2em 0 3em;
+    margin-top: 2em;
+    margin-bottom: 3em;
   }
   .photo {
     background-image: url('images/hero.jpg');
@@ -204,6 +208,10 @@ section.looking-ahead {
   margin-bottom: 2rem !important;
 }
 
+.ui-tabs {
+  padding: 0 1rem !important;
+}
+
 .ui-navbar li .ui-btn {
   background-color: transparent !important;
   color: $gray !important;
@@ -263,7 +271,6 @@ section.looking-ahead {
 }
 
 // End overrides
-
 
 .state-loans {
   padding: 1rem;

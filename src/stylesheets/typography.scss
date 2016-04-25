@@ -16,6 +16,7 @@ body {
 
 p, q, blockquote, li {
   color: $medium-text;
+  line-height: 1.45;
 }
 
 @for $i from 1 through 6 {

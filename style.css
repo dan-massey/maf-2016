@@ -13,7 +13,8 @@ body {
       font-size: 15px; } }
 
 p, q, blockquote, li {
-  color: #676565; }
+  color: #676565;
+  line-height: 1.45; }
 
 h1 {
   font-family: "Roboto Condensed", sans-serif; }
@@ -250,10 +251,13 @@ section {
   margin: 0 auto; }
 
 header .colored-banner .color-block {
-  height: 3px; }
+  height: 5px; }
 
+section.hero h1 {
+  line-height: 1; }
 section.hero .hero-content {
-  margin: 2em 0 3em; }
+  margin-top: 2em;
+  margin-bottom: 3em; }
 section.hero .photo {
   background-image: url("images/hero.jpg");
   margin: 0 -1.5rem; }
@@ -350,6 +354,9 @@ section.looking-ahead .research-photo {
 
 .mobile-tab {
   margin-bottom: 2rem !important; }
+
+.ui-tabs {
+  padding: 0 1rem !important; }
 
 .ui-navbar li .ui-btn {
   background-color: transparent !important;
