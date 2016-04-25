@@ -361,6 +361,19 @@ section.looking-ahead .research-photo {
   text-shadow: none !important;
   box-shadow: none !important; }
 
+.ui-icon-plus:after {
+  background-image: none !important; }
+
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after {
+  display: none !important; }
+
+.ui-btn-icon-left {
+  padding-left: 1em !important; }
+
 .state-loans {
   padding: 1rem; }
 
