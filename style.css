@@ -326,6 +326,10 @@ section.our-clients .client {
   margin-bottom: 2em; }
 section.our-clients .sandra {
   background-image: url("images/sandra.jpg"); }
+section.our-clients .henry {
+  background-image: url("images/clients-henry.jpg"); }
+section.our-clients .kimberly {
+  background-image: url("images/clients-kimberly.jpg"); }
 section.our-clients .column-photo {
   margin-bottom: 2rem; }
 
