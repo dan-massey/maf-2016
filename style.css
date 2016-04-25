@@ -225,21 +225,6 @@ h5.header-border {
   background-color: rgba(15, 153, 61, 0.5);
   color: #fff; }
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #44546a; }
-
-.axis text {
-  fill: #44546a; }
-
-svg rect {
-  width: 30px; }
-
-span.big-figure {
-  font-size: 4rem;
-  font-family: "Roboto Condensed", sans-serif; }
-
 a.mobile-tab-label {
   border-width: 0 0 1 0;
   font-family: "Roboto Condensed", sans-serif;
