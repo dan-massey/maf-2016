@@ -27,7 +27,7 @@ body
   section.hero
     .row.hero-content.bottom-xs
       .col-xs-12.col-md-6
-        h4.no-margin 2015 Annual Report
+        h4.no-margin 2015 Annual Report 
         h1.no-margin Building Better
       .col-xs-12.col-md-6.small-padding-bottom
         p.no-margin We're a nonprofit on a mission to build a fair financial marketplace for hardworking families.
@@ -79,7 +79,7 @@ body
           h5.no-margin.green Steps
           p Our staff walked, ran, and skipped a total of 32,319,504 steps in MAF’s fitness challenge
         +steps
-    .row.show-xs
+.row.show-xs:     .row.show-xs
       div(data-role="tabs").col-xs-12
         div(data-role="navbar")
           ul
@@ -100,73 +100,36 @@ body
     .row
       .col-xs-12
         h3 Milestones
+        mixin milestones
+          .column-photo.placeholder-sm
+        +milestones
     .row
-      .col-xs-12.col-md-4
-        include ../images/lending.svg
-        h4.orange.no-margin $5.04M in loan volume 
-        p.no-margin Through 5,380 social loans.
-      .col-xs-12.col-md-4
-        include ../images/savings.svg
-        h4.purple.no-margin $1.02M saved in interest & fees
-        p.no-margin That’s 20 cents saved on every dollar loaned.
-      .col-xs-12.col-md-4
-        include ../images/handshake.svg
-        h4.yellow.no-margin 99.3% repayment rate
-        p.no-margin With a total of 599,606 credit points added.
-    .row
-      .col-xs-12.col-md-6
-        h3.no-margin 2015 Impact
-        p Each year, we’re building better resources & stronger communities. Here's what we accomplished in 2015:
-    .row
-      .col-xs-12.col-md-4
-        h4.no-margin 2,367 social loans
-        p.no-margin
-          span.green ▴ 
-          | 37% compared to 2014
-      .col-xs-12.col-md-4
-        h4.no-margin $2.07M in loans
-        p.no-margin
-          span.green ▴ 
-          | 33% compared to 2014
-      .col-xs-12.col-md-4
-        h4.no-margin 21 new partnerships
-        p.no-margin
-          span.green ▴ 
-          | 66% compared to 2014
-    .row.middle-xs
-      .col-xs-12.col-sm-4
-        h4.no-margin Total Number of Partners to Date
-        span.big-figure#partners-count-figure
-        p.no-margin
-          span.green ▴ 
-          span#partners-count-detail
-      .col-xs-12.col-sm-8#partners-count-chart
-      .col-xs-12.col-sm-4
-        h4.no-margin Total Number of Loans to Date
-        span.big-figure#loans-count-figure
-        p.no-margin
-          span.green ▴ 
-          span#loans-count-detail
-      .col-xs-12.col-sm-8#loans-count-chart
-      .col-xs-12.col-sm-4
-        h4.no-margin Total Amount of Loans to Date
-        span.big-figure#loans-sum-figure
-        p.no-margin
-          span.green ▴ 
-          span#loans-sum-detail
-      .col-xs-12.col-sm-8#loans-sum-chart
+      .col-xs-12
+        h3 Growth
+        mixin growth
+          .column-photo.placeholder-sm
+        +growth
     .row
       .col-xs-12
         h3 Client Outcomes
-      .col-xs.col-md-6
-        p Without a good credit score, everything is more expensive. If your score is under 650, you can expect to pay 2-5x more in interest. That means a used car worth $5,000 would cost you $6,800.  You would end up paying 36% — or $1800 — just in interest.
-      .col-xs-12.col-md-6
-        p The majority of our clients join with low or no credit scores:
+        mixin outcomes
+          .column-photo.placeholder-sm
+        +outcomes
+    .row.show-xs: div(data-role="tabs").col-xs-12
+      div(data-role="navbar")
         ul
-          li  60% have subprime credit or no credit at the start
-          li 9 out of 10 without a score quickly build one (jumping from 0 to 650 points)
-          li 7 out of 10 with subprime credit significantly improve their scores.
-          li Overall, we’ve added 1000+ prime borrowers to the marketplace
+          li.mobile-tab
+            a(href="#impact-one").mobile-tab-label Milestones
+          li.mobile-tab
+            a(href="#impact-two").mobile-tab-label Growth
+          li.mobile-tab
+            a(href="#impact-three").mobile-tab-label Outcomes
+      div(id="impact-one")
+        +milestones
+      div(id="impact-two")
+        +growth
+      div(id="impact-three")
+        +outcomes
       
   section.our-clients
     h2.header.header-gray Our Clients
@@ -710,4 +673,3 @@ body
           li Billy Roh
           li Sudarshan Upadhya
           li Kathryn Weinmann
-  script(src="chart.js")
