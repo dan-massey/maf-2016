@@ -345,6 +345,9 @@ section.looking-ahead .summit {
 section.looking-ahead .research-photo {
   background-image: url("images/forward-research.jpg"); }
 
+.ui-page-theme-a, .ui-overlay-a {
+  background-color: #fff !important; }
+
 .mobile-tab {
   margin-bottom: 2rem !important; }
 
@@ -377,12 +380,29 @@ section.looking-ahead .research-photo {
 .ui-collapsible-content, .ui-body-inherit {
   background: none !important; }
 
+.ui-page-theme-a, .ui-btn {
+  background: none !important;
+  text-shadow: none !important;
+  border: none !important; }
+
+.ui-collapsible {
+  margin: 0 !important; }
+
+.ui-page-theme-a, .ui-body-inherit {
+  border: none !important; }
+
+.ui-btn:hover {
+  background-color: whitesmoke !important; }
+
+.ui-page-theme-a .ui-btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important; }
+
 .state-loans {
   padding: 1rem; }
 
-.state-loans.total {
-  background-color: #44546a;
-  color: white; }
+.state-loans.total a {
+  background-color: whitesmoke !important; }
 
 .state {
   text-transform: capitalize; }

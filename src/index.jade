@@ -206,16 +206,27 @@ body
     h2.header.header-purple Loans Across the Country
     include states.jade
     .row
-      each state in states
-        .col-xs-6.col-sm-3.state-loans(data-role="collapsible" data-inset="false")
-          h4.no-margin
-            p.state= state['name']
-            span.state-icon= state['state-icon']
-            span.amount= state['amount']
-          ul
-            if state['partners']
-              each partner in state['partners']
-                li= partner
+      each state, index in states
+        if index === states.length - 1
+          .col-xs-12.state-loans.total(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              p.state= state['name']
+              span.state-icon= state['state-icon']
+              span.amount= state['amount']
+            ul
+              if state['partners']
+                each partner in state['partners']
+                  li= partner
+        else
+          .col-xs-6.col-sm-3.state-loans(data-role="collapsible" data-inset="false")
+            h4.no-margin
+              p.state= state['name']
+              span.state-icon= state['state-icon']
+              span.amount= state['amount']
+            ul
+              if state['partners']
+                each partner in state['partners']
+                  li= partner
   section.highlights
     h2.header.header-orange 2015 Highlights
     .row.hide-xs
