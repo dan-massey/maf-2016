@@ -12,6 +12,15 @@
   }
 }
 
+@media only screen and (max-width : $md) {
+  .hide-md {
+    display: none;
+  }
+  .show-md {
+    display: inherit;
+  }
+}
+
 //// Grid
 .no-margin {
   margin: 0;

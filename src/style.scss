@@ -47,16 +47,52 @@ header .colored-banner {
 }
 
 section.hero {
+  padding-top: 0;
+
+  @media (min-width: $md) {
+    padding-top: 1.5rem;
+  }
+
   h1 {
     line-height: 1;
   }
+
   .hero-content {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    background-color: $blue;
+    color: #fff;
+    margin: 0rem -1.5rem;
+    padding: 2em 0.75em;
+
+    @media (min-width: $md) {
+      margin: 2rem 0 2rem;
+      padding: 3rem 2rem;
+    }
+  }
+
+  .hero-content.upper {
+    display: none;
+
+    @media (min-width: $md) {
+      display: flex;
+    }
+  }
+
+  .hero-content.lower {
+    display: flex;
+
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+
+  .hero-tagline {
+    color: #fff;
+    opacity: 0.75;
   }
   .photo {
     background-image: url('images/hero.jpg');
     margin: 0 -1.5rem;
+
     @media (min-width: $md) {
       margin: 0;
     }

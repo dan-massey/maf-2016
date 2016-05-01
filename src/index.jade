@@ -25,14 +25,20 @@ body
       .col-xs.color-block.background-orange
       .col-xs.color-block.background-black
   section.hero
-    .row.hero-content.bottom-xs
-      .col-xs-12.col-md-6
+    .row.hero-content.upper.bottom-md
+      .col-md-6
         h4.no-margin 2015 Annual Report 
         h1.no-margin Building Better
-      .col-xs-12.col-md-6.small-padding-bottom
-        p.no-margin We're a nonprofit on a mission to build a fair financial marketplace for hardworking families.
+      .col-md-6.small-padding-bottom
+        p.no-margin.hero-tagline We're a nonprofit on a mission to build a fair financial marketplace for hardworking families.
     .photo
       img(src='images/hero.jpg')
+    .row.hero-content.lower.bottom-xs
+      .col-xs-12
+        h4.no-margin 2015 Annual Report 
+        h1.no-margin Building Better
+      .col-xs-12.small-padding-bottom
+        p.no-margin.hero-tagline We're a nonprofit on a mission to build a fair financial marketplace for hardworking families.
   section.values
     h3 Our Values
     .row
@@ -47,7 +53,7 @@ body
           p.background-transparent-green.value-caption.no-margin We build on what you have. 
   section.ceo-letter
     h3 A Word from Our CEO
-    .row
+    .row.middle-md
       .col-xs-12.col-md-6
         .photo
           img(src='images/ceo.jpg')
