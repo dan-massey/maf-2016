@@ -396,10 +396,37 @@ section.looking-ahead .research-photo {
 
 .ui-page-theme-a .ui-btn.ui-btn-active {
   background-color: transparent !important;
-  color: #0f993d !important;
-  border-bottom: 3px solid #0f993d !important;
+  border-bottom: 3px solid !important;
   text-shadow: none !important;
   box-shadow: none !important; }
+
+.ui-btn.ui-btn-active.green-tab {
+  color: #0f993d !important;
+  border-bottom-color: #0f993d !important; }
+
+.ui-btn.ui-btn-active.yellow-tab {
+  color: #ffbb00 !important;
+  border-bottom-color: #ffbb00 !important; }
+
+.ui-btn.ui-btn-active.gray-tab {
+  color: #44546a !important;
+  border-bottom-color: #44546a !important; }
+
+.ui-btn.ui-btn-active.red-tab {
+  color: #bf0020 !important;
+  border-bottom-color: #bf0020 !important; }
+
+.ui-btn.ui-btn-active.purple-tab {
+  color: #772699 !important;
+  border-bottom-color: #772699 !important; }
+
+.ui-btn.ui-btn-active.orange-tab {
+  color: #ff7700 !important;
+  border-bottom-color: #ff7700 !important; }
+
+.ui-btn.ui-btn-active.black-tab {
+  color: #231f20 !important;
+  border-bottom-color: #231f20 !important; }
 
 .ui-icon-plus:after {
   background-image: none !important; }

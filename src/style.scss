@@ -256,10 +256,38 @@ section.looking-ahead {
 }
 .ui-page-theme-a .ui-btn.ui-btn-active {
   background-color: transparent !important;
-  color: $green !important;
-  border-bottom: 3px solid $green !important;
+  border-bottom: 3px solid !important;
   text-shadow: none !important;
   box-shadow: none !important;
+}
+
+.ui-btn.ui-btn-active.green-tab {
+  color: $green !important;
+  border-bottom-color: $green !important;
+}
+.ui-btn.ui-btn-active.yellow-tab {
+  color: $yellow !important;
+  border-bottom-color: $yellow !important;
+}
+.ui-btn.ui-btn-active.gray-tab {
+  color: $gray !important;
+  border-bottom-color: $gray !important;
+}
+.ui-btn.ui-btn-active.red-tab {
+  color: $red !important;
+  border-bottom-color: $red !important;
+}
+.ui-btn.ui-btn-active.purple-tab {
+  color: $purple !important;
+  border-bottom-color: $purple !important;
+}
+.ui-btn.ui-btn-active.orange-tab {
+  color: $orange !important;
+  border-bottom-color: $orange !important;
+}
+.ui-btn.ui-btn-active.black-tab {
+  color: $black !important;
+  border-bottom-color: $black !important;
 }
 
 // jQuery expandable overrides
